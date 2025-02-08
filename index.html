@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
-		<title>Title</title>
+		<title>Fractals</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles.css">
 		<script src="processing.js"></script>
 	</head>
 	<body>
 		<header>
-			<h1>Headline</h1>
+			<h1>Sierpinski Triangle & Mandelbrot Set</h1>
 		</header>
 			<section id="content">
 				<canvas id="SierpinskiTriangle" data-processing-sources="SierpinskiTriangle.pde">
 				</canvas>
 		    </section>
 	    <footer>
-		    Footer
+		    <b>Sierpinski Triangle</b>
+		    <br/><i>Shape colors are generated based on a hash of the shape's position and size, added to the frameCount,<br/>then plugged into different sine/cosine functions to generate a yellow/blue color gradient.</i>
+		    <br/>Press <b>W</b> to increase the number of iterations that are used to generate the fractal. <br/><b>S</b> will decrease the number of iterations.
+		    <br/>Press <b>up arrow</b> to increase the number of sides of each polygon. This also increases the number that spawn at each iteration.<br/><b>down arrow</b> will decrease both of these variables.
+		    <br/>Press <b>A</b> to spread apart the shapes. This is EXTREMELY important for the square fractal, otherwise it will just form a large square!<br/><b>D</b> will attract the shapes.
+		    <br/><b>Mandelbrot Set</b>
+		    <br/>Press <b>T</b> to increase the resolution of the image. Higher resolution images will take exponentially longer to render.<br/><b>G</b> decreases the resolution.
+		    <br/>Press <b>WASD</b> to move the fractal around the screen.
+		    <br/>Press <b>up arrow</b> to zoom in and <b>down arrow</b> to zoom out.
+		    <br/>Press <b>right arrow</b> to increase the number of iterations used to generate the fractal. (Makes it more intricate)<br/><b>left arrow</b> will decrease the number of iterations.
 	    </footer>
 	</body>
 </html>
